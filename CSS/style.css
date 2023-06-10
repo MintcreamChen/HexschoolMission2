@@ -1,0 +1,278 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* style CSS starts from here*/
+
+*, *::before, *::after{ 
+  box-sizing: border-box; 
+}
+
+body{
+  font-family: 'Noto Sans TC', sans serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #000;
+}
+.tool-container{
+  padding: 12px;
+  background: white;
+  border-radius: 20px;
+}
+
+.tool-slogan{
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 96px;
+  text-align: center;
+  margin-top: 160px;
+}
+
+.tool-slogan-line{
+      display: inline-block;
+}
+
+.tool-container p{
+  color:#525252;
+  font-size: 14px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  max-width: 1296px;
+  height: 64px;
+  color:#919191;
+  background: #F2F2F2;
+  margin: 0 auto;
+  padding-left: 43px;
+  border-radius: 16px ;
+  margin-top: 80px;
+}
+
+.bar-text{
+  color:#919191;
+}
+
+.tool-menu-container{
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.tool-filter, .tool-order{
+  display: flex;
+  align-items: center;
+  color:#020202;
+  height: 64px;
+  flex-shrink:0;
+  border: 1px solid #F2F2F2;
+  border-radius: 16px;
+  padding: 20px 32px 20px 40px;
+  gap: 12px;
+}
+
+.tool-filter:hover, .tool-order:hover{
+   background: #F2F2F2;
+}
+
+.tool-menu{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  padding: 8px 16px;
+  gap: 10px;
+}
+
+.tool-category{
+  display: block;
+  flex-shrink:0;
+  text-align: center;
+  border-radius: 16px;
+  height: 40px;
+  padding: 8px 16px;
+  color:#919191;
+}
+
+.tool-category:hover{
+   color:#020202;
+   background: #F2F2F2;
+   font-weight: 700;
+}
+
+.tool-category p:hover{
+   color:#020202;
+}
+
+.tool-menu-phone{
+  display: none;
+}
+
+.material-symbols-outlined {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.tool-content{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1296px;
+  justify-content: space-between; 
+  margin: 0 auto;
+}
+
+.tool-listbox{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+  width: 32%;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  border: 1px solid #F2F2F2;
+  font-family: 'Noto Sans TC', sans serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.tool-content h3{
+  font-weight: 900;
+  font-size: 20px;
+  color:#020202;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.tool-content h4{
+  font-weight: bold;
+  color:#020202;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+img{
+  max-width: 100%;  
+}
+
+.tool-cover{
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.tool-cover img{
+  transition: transform 0.3s ease;
+}
+
+.tool-cover img:hover{
+    transform: scale(1.2);
+}
+
+.tool-title{
+  flex-grow:1;
+  box-sizing:border-box;
+  padding: 20px 32px;
+  border-color: #F2F2F2;
+  border-bottom: 2px solid #F2F2F2;
+}
+
+.tool-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 32px;
+  border-bottom: 2px solid #F2F2F2;
+}
+
+.tool-tag{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 32px;
+}
+
+.tool-share{
+  color:black;
+}
+
+@media(max-width:768px) {
+    .tool-slogan{
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+    .tool-menu{
+      display: none;
+    }
+    .tool-menu-phone{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+        gap: 10px;
+    }
+
+  .tool-content{
+        justify-content: center;
+        gap: 10px;
+   }
+  
+    .tool-listbox{
+      width: 49%;
+      min-width:300px;
+    }
+}
+
+@media(max-width:416px) {    
+    .tool-listbox{
+      width: 100%;
+    }
+}
