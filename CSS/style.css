@@ -236,7 +236,7 @@ img{
   display: flex;
   flex-direction: column;
   background: rgba(256,256,256,0.08);
-  width: 416px;
+  width: 32%;
   border-radius: 16px;
   padding: 40px;
   gap: 20px;
@@ -249,7 +249,7 @@ img{
 
 .testimonial-text{
   color:#F2F2F2;
-  width: 336px;
+  width: 81%
   height: 215px;
 }
 
@@ -527,9 +527,6 @@ a{
     width: 100%;
   }
 
-  .testimonial-flex{
-  justify-content: space-evenly;
-  }
 
 }
 
@@ -561,6 +558,13 @@ a{
   .header-deco img{
     height: 117px;
   }
+
+  .testimonial-flex{
+    justify-content: space-evenly;
+    }
+    .testimonial-box{
+      width: 100%;
+    }
 
   .tool-slogan{
     font-size: 32px;
