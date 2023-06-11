@@ -207,10 +207,11 @@ img{
   padding: 80px 40px;
   border: 1px solid #525252;
   border-radius: 16px;
+  margin-bottom: 12px;
 }
 
 .service-icon{
-  width: 18%;
+  width: 74px;
 }
 
 .partner{
@@ -518,6 +519,13 @@ a{
     margin-left: 12px;
     margin-right: 12px;
   }
+  .service-feature-flex{
+    flex-direction: column;
+  }
+
+  .service-feature-box{
+    width: 100%;
+  }
 
   .testimonial-flex{
   justify-content: space-evenly;
@@ -548,6 +556,10 @@ a{
 
   .menu-pc{
     display: none;
+  }
+
+  .header-deco img{
+    height: 117px;
   }
 
   .tool-slogan{
