@@ -20,7 +20,7 @@
 <body>
 <div class="intro">
   <div class="header" id="header">
-    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true" alt="logo" class="logo">
+    <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true" alt="logo" class="logo"></a>
     <div class="menu">
       <span class="material-symbols-outlined"><span class="menu-phone">menu</span></span>
       <a href="#" title="Index"><h6 class="menu-pc">首頁</h6></a>
@@ -30,8 +30,7 @@
   <h1>透過</h1>
   <h1>AI工具王的</h1>
   <h1>強大模型</h1>
-  <h1 class="heroline">讓您的業務</h1>
-  <h1 class="heroline">更聰明
+  <h1><span class="heroline">讓您的業務</span><span class="heroline">更聰明</span>
   </h1>
   <a href="#" title="Start"><h5 class="btn">開始使用</h5></a>
   <div class="header-deco"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true" alt="裝飾物" alt="decoration"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true" alt="裝飾物" alt="decoration"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true" alt="裝飾物" alt="decoration"></div>
@@ -72,8 +71,8 @@
     <div class="partner-logoline">
       <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true" alt="logoipsum"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise8.png?raw=true" alt="logoipsum"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise9.png?raw=true" alt="logoipsum"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise5.png?raw=true" alt="logoipsum"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise11.png?raw=true" alt="logoipsum"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise12.png?raw=true" alt="logoipsum"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true" alt="logoipsum"></div>
   </div>
-  <div class="testimonial-flex">
-    <div class="testimonial-box">
+  <ul class="testimonial-flex">
+    <li class="testimonial-box">
       <div class="testimonial-grade">
         <span class="material-symbols-outlined">grade</span>
         <span class="material-symbols-outlined">grade</span>
@@ -93,8 +92,8 @@
           <p class="customer-company">ABC科技有限公司</p>
         </div>
       </div>
-    </div>
-    <div class="testimonial-box">
+    </li>
+    <li class="testimonial-box">
       <div class="testimonial-grade">
         <span class="material-symbols-outlined">grade</span>
         <span class="material-symbols-outlined">grade</span>
@@ -114,8 +113,8 @@
           <p class="customer-company">XYZ 醫療器材有限公司</p>
         </div>
       </div>
-    </div>
-    <div class="testimonial-box">
+    </li>
+    <li class="testimonial-box">
       <div class="testimonial-grade">
         <span class="material-symbols-outlined">grade</span>
         <span class="material-symbols-outlined">grade</span>
@@ -135,13 +134,13 @@
           <p class="customer-company">EFG 銀行</p>
         </div>
       </div>
-    </div>
-  </div>
+    </li>
+  </ul>
 </div>
 <!--- tool starts --->
     <div class="tool-container">
         <h2 class="tool-slogan"><span class="tool-slogan-line">這些超酷的應用，</span><span class="tool-slogan-line">都來自AI工具王</span></h2>
-        <div class="search"><span class="material-symbols-outlined">search</span><div class="bar-text">&nbsp;&nbsp;輸入關鍵字搜尋</div></div> 
+        <div class="search"><span class="material-symbols-outlined">search</span><input placeholder="&nbsp;&nbsp;輸入關鍵字搜尋" class="bar-text"></div> 
         <div class="tool-menu-container">
           <div class="tool-filter">
             篩選
@@ -169,10 +168,13 @@
                 <p>生產力</p>
               </li>
             </ul>
-           <div class="tool-order">
-            由新到舊
-            <span class="material-symbols-outlined">
-        expand_more</span></div> 
+          <div class="tool-order">
+           <select class="tool-order-select">
+            <option value="latest" selected>由新到舊</option>
+            <option value="oldest">由舊到新</option>
+            <option value="popular">最熱門</option>
+           </select>
+          </div>
         </div>
         <!-- 下列 for 手機版 tool-menu -->
             <ul class="tool-menu-phone">
@@ -300,7 +302,7 @@
 <!--- bottom starts --->
 <div class="bottom">
   <div class="calltoaction">
-    <h3>現在就來建立屬於你的服務吧</h3>
+    <h3><span class="CTA-line">現在就來建立</span><span class="CTA-line">屬於你的服務吧</span></h3>
     <a href="#" title="Start"><h5 class="btn">開始使用</h5></a>
   </div>
   <div class="price">
@@ -308,7 +310,7 @@
       <a href="#header" title="Index"><h2>首頁</h2></a>
       <a href="#" title="Price"><h2>定價</h2></a>
     </div>
-    <a href="#header"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png" alt="logo" class="logo"></a>
+    <a href="#header" class="logo"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png" alt="logo" class="logo"></a>
   </div>
   <div class="footer">
     <div class="footer-left">

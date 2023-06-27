@@ -125,7 +125,7 @@ img{
 .header{
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  padding: 20px 0px;
   border-bottom: 1px solid #FFFFFF;
   align-items: center;
   margin-bottom: 40px;
@@ -349,6 +349,12 @@ img{
 
 .bar-text{
   color:#919191;
+  border: none;
+  background: #F2F2F2;
+}
+
+.bar-text:focus{
+  outline: none;
 }
 
 .tool-menu-container{
@@ -375,6 +381,21 @@ img{
 .tool-filter:hover, .tool-order:hover{
    background: #F2F2F2;
 }
+
+.tool-order select{
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('https://fonts.gstatic.com/s/i/materialicons/expand_more/v10/24px.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 24px; /* 為圖標留出空間 */
+}
+
 
 .tool-menu{
   display: flex;
@@ -457,7 +478,7 @@ a{
   transition: transform 0.3s ease;
 }
 
-.tool-cover img:hover{
+.tool-listbox:hover img{
     transform: scale(1.2);
 }
 
@@ -499,6 +520,10 @@ a{
   margin-top: 78px;
 }
 
+.CTA-line{
+  display: inline-block;
+}
+
 .price{
   display: flex;
   justify-content: space-between;
@@ -512,7 +537,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 88px;
+  padding: 32px 0px;
 }
 
 .footer-left{
@@ -623,9 +648,9 @@ a{
   }
   .tool-menu-phone{
       display: flex;
-      flex-wrap: wrap;
+      overflow-x: scroll;
+      white-space: nowrap;
       align-items: center;
-      justify-content: center;
       padding: 8px 16px;
       gap: 10px;
   }
@@ -640,6 +665,25 @@ a{
       min-width:300px;
     }
   
+    .CTA-line{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .price{
+      flex-direction: column;
+      gap: 40px;
+    }
+    .price-text h2{
+      font-size: 48px;
+      line-height: 1.2;
+    }
+
+    .logo{
+      order:-1;
+    }
+
     .footer-social-pc{
       display: none;
     }
